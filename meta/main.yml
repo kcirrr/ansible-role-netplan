@@ -1,0 +1,23 @@
+---
+galaxy_info:
+  role_name: netplan
+  author: kcir
+  description: Configure Netplan
+  company: NA
+
+  issue_tracker_url: https://github.com/kcirrr/ansible-role-netplan/issues
+
+  license: MIT
+
+  min_ansible_version: "2.12.2"
+
+  platforms:
+    - name: Ubuntu
+      versions:
+        - jammy
+        - focal
+        - bionic
+
+  galaxy_tags: []
+
+dependencies: []

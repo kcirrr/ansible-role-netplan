@@ -1,0 +1,13 @@
+---
+- name: Configure Netplan
+  ansible.builtin.template:
+    src: network.yaml.j2
+    dest: /etc/netplan/network.yaml
+    owner: root
+    group: root
+    mode: '644'
+  notify: netplan apply
+  when: netplan is defined
+
+- name: Flush handlers
+  ansible.builtin.meta: flush_handlers
